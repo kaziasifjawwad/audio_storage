@@ -1,0 +1,36 @@
+<head>
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+
+<div class="jumbotron text-center">
+
+    {% load static %}
+  <h1 class="display-3">Welcome to Admin Page</h1>
+    <strong>User Audio Clip</strong>
+     <hr>
+<audio  controls>
+  <source src="{{ filePath }}" type="audio/wav">
+{#  <source src="{{MEDIA_URL}}vhat_khai_ami.wav " type="audio/mpeg">#}
+Your browser does not support the audio element.
+</audio>
+  <hr>
+
+    <strong><a href="{% url 'clippingdone' %}">Remosve Blank Audio</a></strong>
+
+</div>
+</body>
