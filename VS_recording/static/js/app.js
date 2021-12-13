@@ -16,7 +16,7 @@ var audioContext //audio context to help us record
 // get the sentence name
 var senten = document.getElementById("sentence").innerHTML;
 // document.getElementById("senten").innerHTML = senten;
-
+console.log("hello");
 var recordButton = document.getElementById("recordButton");
 var stopButton = document.getElementById("stopButton");
 var pauseButton = document.getElementById("pauseButton");
